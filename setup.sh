@@ -274,8 +274,8 @@ mv fallingstar.jpg $HOME/../usr/share/backgrounds/xfce/
 
 #Install Stilish Theme
 wget https://github.com/Fr1z/TermuxXfce4Freedreno/raw/refs/heads/main/theme/Stylish.tar.xz
-tar -xf Stilish.tar.xz -C $HOME/../usr/share/themes/
-rm -rf Stilish.tar.xz
+tar -xf Stylish.tar.xz -C $HOME/../usr/share/themes/
+rm -rf Stylish.tar.xz
 
 
 cat <<'EOF' > $HOME/../usr/var/lib/proot-distro/installed-rootfs/debian/home/$username/.Xresources
