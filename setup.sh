@@ -29,6 +29,7 @@ pkg update -y -o Dpkg::Options::="--force-confold"
 pkg upgrade -y -o Dpkg::Options::="--force-confold"
 pkg uninstall dbus -y
 pkg install wget ncurses-utils dbus proot-distro x11-repo tur-repo pulseaudio -y
+pkg install mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
 
 #Create default directories
 mkdir -p Desktop
@@ -42,10 +43,10 @@ proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt upgrade -y
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 apt install sudo wget nala jq flameshot conky-all libvulkan1 glmark2 -y
 
 #Install DRI3 patched driver
-wget https://github.com/Fr1z/TermuxXfce4Freedreno/raw/main/mesa-vulkan-kgsl_23.3.0-ubuntu_arm64.deb
-mv mesa-vulkan-kgsl_23.3.0-ubuntu_arm64.deb $HOME/../usr/var/lib/proot-distro/installed-rootfs/debian/root/
-proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 dpkg -i mesa-vulkan-kgsl_23.3.0-ubuntu_arm64.deb
-proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 rm mesa-vulkan-kgsl_23.3.0-ubuntu_arm64.deb
+wget https://github.com/Fr1z/TermuxXfce4Freedreno/raw/main/mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
+mv mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb $HOME/../usr/var/lib/proot-distro/installed-rootfs/debian/root/
+proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 dpkg -i mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
+proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 rm mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
 
 #Create user
 proot-distro login debian --shared-tmp -- env DISPLAY=:1.0 groupadd storage
