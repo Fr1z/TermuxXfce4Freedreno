@@ -273,7 +273,7 @@ wget https://raw.githubusercontent.com/Fr1z/TermuxXfce4Freedreno/main/theme/fall
 mv fallingstar.jpg $HOME/../usr/share/backgrounds/xfce/
 
 #Install Stilish Theme
-wget https://raw.githubusercontent.com/Fr1z/TermuxXfce4Freedreno/main/theme/Stilish.tar.xz
+wget https://github.com/Fr1z/TermuxXfce4Freedreno/raw/refs/heads/main/theme/Stylish.tar.xz
 tar -xf Stilish.tar.xz -C $HOME/../usr/share/themes/
 rm -rf Stilish.tar.xz
 
