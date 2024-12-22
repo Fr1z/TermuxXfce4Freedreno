@@ -189,7 +189,7 @@ setup_termux_x11() {
 # Install Termux-X11
 sed -i '12s/^#//' $HOME/.termux/termux.properties
 
-wget https://github.com/termux/termux-x11/releases/download/nightly/termux-x11-nightly-1.03.01-0-all.deb
+wget -O termux-x11.deb https://github.com/termux/termux-x11/releases/download/nightly/termux-x11-nightly-1.03.01-0-all.deb 
 dpkg -i termux-x11.deb
 rm termux-x11.deb
 apt-mark hold termux-x11-nightly
