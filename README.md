@@ -9,12 +9,13 @@ Install with :
 curl -sL https://raw.githubusercontent.com/Fr1z/TermuxXfce4Freedreno/main/setup.sh -o setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
-# Differences with phoenixbyrd's version
-- Termux GPU renderer is using zink+turnip instead of virpipe, which gives better performance for Qualcomm devices.
-- Proot GPU renderer is using dri3 patched zink+turnip. This should give best performance, but still has a bug to be used to run full xfce4. You can test it from xfce by running GUI aplication (e.g. glmark) from proot.
-- Other small fixes.
+# Differences with bengkelgawai's version
+- Termux GPU renderer is an updated version of zink+turnip mesa driver, also provides a script to compile newer version by yourself
+- Removed his customized appstore
+- Different GTK theme and background
+- Is really a fork so glory to him
 
-![Desktop Screenshot](Desktop.png)
+![Desktop Screenshot](desktop.png)
 
 # Below information is copied from original repository
 ## Please check it if you want Termux XFCE that will work in Non-Qualcomm devices
@@ -24,9 +25,7 @@ curl -sL https://raw.githubusercontent.com/Fr1z/TermuxXfce4Freedreno/main/setup.
   
 # Use Case
   
-This is is how I personally use Termux on my Galaxy Fold 3, script was created mainly for personal use but also for others if they wanted to try out my setup. This is my daily driver used with a 15 inch Lepow portable monitor and bluetooth keyboard and mouse. This is mainly intended to be used as a PC/Laptop replacement connected to a monitor, keyboard and mouse and used as you would with any PC/Laptop. I run this on my Samsung Galaxy Fold 3.
-
-![My Samsung Galaxy Fold 3 - Dex Setup](desk.jpg)  
+This is is how I personally use Termux on my Oneplus 8T, script was created mainly for personal use but also for others if they wanted to try out my setup. This is my daily driver with portable monitor and bluetooth keyboard and mouse. This is mainly intended to be used as a PC/Laptop replacement connected to a monitor, keyboard and mouse and used as you would with any PC/Laptop. 
 
 &nbsp;
 

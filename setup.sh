@@ -278,6 +278,18 @@ wget https://github.com/Fr1z/TermuxXfce4Freedreno/raw/refs/heads/main/theme/Styl
 tar -xf Stylish.tar.xz -C $HOME/../usr/share/themes/
 rm -rf Stylish.tar.xz
 
+wget https://github.com/Fr1z/TermuxXfce4Freedreno/raw/refs/heads/main/theme/Stylish-Dark.tar.xz
+tar -xf Stylish-Dark.tar.xz -C $HOME/../usr/share/themes/
+rm -rf Stylish-Dark.tar.xz
+wget https://github.com/Fr1z/TermuxXfce4Freedreno/raw/refs/heads/main/theme/Stylish-Dark-Laptop.tar.xz
+tar -xf Stylish-Dark-Laptop.tar.xz -C $HOME/../usr/share/themes/
+rm -rf Stylish-Dark-Laptop.tar.xz
+wget https://github.com/Fr1z/TermuxXfce4Freedreno/raw/refs/heads/main/theme/Stylish-Light.tar.xz
+tar -xf Stylish-Light.tar.xz -C $HOME/../usr/share/themes/
+rm -rf Stylish-Light.tar.xz
+wget https://github.com/Fr1z/TermuxXfce4Freedreno/raw/refs/heads/main/theme/Stylish-Light-Laptop.tar.xz
+tar -xf Stylish-Light-Laptop.tar.xz -C $HOME/../usr/share/themes/
+rm -rf Stylish-Light-Laptop.tar.xz
 
 cat <<'EOF' > $HOME/../usr/var/lib/proot-distro/installed-rootfs/debian/home/$username/.Xresources
 Xcursor.theme: dist-dark
